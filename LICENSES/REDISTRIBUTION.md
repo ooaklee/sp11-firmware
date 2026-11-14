@@ -13,10 +13,18 @@ these blobs exists, and they may not be decompiled, modified, or reverse enginee
 
 ## Qualcomm (QCT) firmware
 
-`firmware/camera-icp/*` and `firmware/modem/update.zip` contain Qualcomm-sourced
+`firmware/26100_26.041.12746.0/camera-icp/*` contains Qualcomm-sourced
 firmware, redistributed under the Qualcomm firmware terms used by `linux-firmware`
-(cf. `LICENCE.qcom` in linux-firmware). The camera ICP files mirror files already
-published in linux-firmware under `qcom/x1e80100/camss/`.
+(the complete terms are included verbatim in
+[`LICENSES/LICENSE.qcom`](LICENSE.qcom), copied from
+[linux-firmware](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/LICENSES/LICENSE.qcom),
+as those terms require redistributors of binary materials to include the
+agreement text).
+The camera ICP files mirror files already published in linux-firmware under
+`qcom/x1e80100/camss/`. The modem OTA package (`mbbfwupdate/update.zip`, also
+Qualcomm-sourced) is not stored in Git; it is attached to the release
+`sp11-firmware-v1` as `sp11-firmware-modem-ota.zip` and is subject to the same
+Qualcomm firmware terms.
 
 ## Excluded material
 
